@@ -1,0 +1,133 @@
+/* Normalizacion */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 20px;
+    background-image: url(https://www.inforegion.com.ar/wp-content/uploads/2023/03/Mesa-electoral.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/* Header */
+header {
+    margin: 0 0 1em 0;
+    background-color: rgb(55, 187, 237);
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+p {
+    padding: 7px 5px;
+    font-size: 20px;
+}
+
+
+/* Form */
+form {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 150px;
+    padding-bottom: 10px;
+    min-width: 340px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px 0;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+div {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+div:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+textarea {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+}
+
+fieldset {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 20px 0;
+    border: none;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select  {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    accent-color: blue;
+}
+
+input[type="checkbox"] {
+    accent-color: blue;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(55, 187, 237);
+    color: aliceblue;
+    font-size: 40px;
+    border-color: rgb(175, 179, 182);
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(49, 149, 186);
+}
+
+option:checked {
+    background-color: rgb(55, 187, 237);
+    color: white;
+}
+
+#name-label, #email-label, #number-label, #provincia-label {
+    font-weight: bold;
+}
+

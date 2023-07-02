@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Encuesta presidencial 2023</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <header>
+            <h1 id="title">Encuesta presidencial 2023</h1>
+            <p id="description">
+                Bienvenido/a a la encuesta presidencial 2023. Aquí podrás 
+                encontrar preguntas actualizadas y detalladas sobre las preferencias 
+                electorales de cara a las próximas elecciones presidenciales.
+            </p>
+       </header> 
+       <main>
+            <form id="survey-form">
+                <!-- Datos personales -->
+                <fieldset id="personal-info">
+                    <h2>Datos personales</h2>
+                    <label id="name-label" for="name">¿Cuál es tu nombre? 
+                        <input id="name" type="text" placeholder="Escriba su nombre..." required/>
+                    </label>    
+
+                    <label id="email-label" for="email">¿Cómo es tu correo electrónico? 
+                        <input id="email" type="email" placeholder="Escriba su correo electrónico..." required>
+                    </label>
+
+                    <label id="number-label" for="number">¿Qué edad tenés? 
+                        <input id="number" type="number" min="16" max="120" maxlength="3" placeholder="Introduzca su edad..." required/>
+                    </label>
+                    
+                    <label id="provincia-label" for="dropdown">¿Cuál es tu provincia? 
+                        <select id="dropdown">
+                            <option>Seleccione la provincia donde reside...</option>
+                            <option>Buenos Aires</option>
+                            <option>CABA (Ciudad Autónoma de Buenos Aires)</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <!-- Preguntas encuesta -->
+                <fieldset id="survey">
+                    <h2>Encuesta</h2>
+
+                    <div>
+                        <h3>1. ¿Por cuál de las siguientes listas votarás en las PASO 2023 presidenciales?</h3>
+                        <label><input type="radio" name="lista-paso" value="UxP - Massa / Rossi"/> Unión por la Patria - Sergio Massa / Agustín Rossi</label>
+                        <label><input type="radio" name="lista-paso" value="UxP - Grabois / Medina"/> Unión por la Patria - Juan Grabois / Paula Abal Medina</label>
+                        <label><input type="radio" name="lista-paso" value="JxC - Larreta / Morales"/> Juntos por el Cambio - Horacio Rodríguez Larreta / Gerardo Morales</label>
+                        <label><input type="radio" name="lista-paso" value="JxC - Bulrrich / Petri"/> Juntos por el Cambio - Patricia Bullrich / Luis Petri</label>
+                        <label><input type="radio" name="lista-paso" value="LLA - Milei / Villaruel"/> La Libertad Avanza - Javier Milei / Victoria Villaruel</label>
+                        <label><input type="radio" name="lista-paso" value="Hacemos - Schiaretti / Randazzo"/> Hacemos por el País - Juan Schiaretti / Florencio Randazzo</label>
+                        <label><input type="radio" name="lista-paso" value="FdI - Bregman / Cano"/> Frente de Izquierda - Myriam Bregman / Nicolás del Caño</label>
+                        <label><input type="radio" name="lista-paso" value="FdI - Solano / Ripolli"/> Frente de Izquierda - Gabriel Solano / Vilma Ripolli</label>
+                        <label><input type="radio" name="lista-paso" value="PyV - Moreno / Fabre"/> Principios y Valores - Guillermo Moreno / Leonardo Fabre</label>
+                        <label><input type="radio" name="lista-paso" value="Mas - Castaneira / Ruiz"/> Nuevo Más - Manuela Castañeira / Lucas Ruiz</label>
+                        <label><input type="radio" name="lista-paso" value="PO - Ramal / Urones"/> Política Obrera - Marcelo Ramal / Patricia Urones</label>
+                        <label><input type="radio" name="lista-paso" value="Libres - Escobar / Lezama"/> Libres del Sur - Jesús Escobar / Marianella Lezama Hid</label>
+                        <label><input type="radio" name="lista-paso" value="FPF - Biondini / Avendano"/> Frente Patriota Federal - César Biondini / Mariel Avendaño</label>
+                        <label><input type="radio" name="lista-paso" value="Demos - Etchepare / Lorenzo"/> Demos - Nazareno Etchepare / Fernando Lorenzo</label>
+                        <label><input type="radio" name="lista-paso" value="Demos - Barbaro / Pucheta"/> Demos - Julio Bárbaro / Ramona Pucheta</label>
+                        <label><input type="radio" name="lista-paso" value="MIJD - Castells / Reinoso"/> MIJD - Raúl Castells / Adriana Reinoso</label>
+                        <label><input type="radio" name="lista-paso" value="MIJD - Cuneo / Barranco"/> MIJD - Santiago Cúneo / Gustavo Barranco</label>
+                        <label><input type="radio" name="lista-paso" value="Liberar - Gobbi / Archet"/> Frente Liber.ar - Pablo Gobbi / Julio Archet</label>
+                        <label><input type="radio" name="lista-paso" value="PDS - Giandinelli / Saleronou"/> Paz, Democracia y Soberanía - Mempo Giardinelli / Bárbara Saleronou</label>
+                        <label><input type="radio" name="lista-paso" value="Blanco"/> Voto blanco</label>
+                        <label><input type="radio" name="lista-paso" value="Nulo"/> Voto nulo</label>
+                        <label><input type="radio" name="lista-paso" value="NoSe"/> No sé</label>
+                    </div>
+
+                    <div>
+                        <h3>2. Seleccione aquellos dirigentes políticos que usted ve con imagen positiva:</h3>
+                        <label for="Alberto-Fernandez">
+                            <input id="Alberto-Fernandez" type="checkbox" name="imagen-positiva" value="Alberto Fernández"/>
+                            Alberto Fernández
+                        </label>
+
+                        <label for="Cristina-Kirchner">
+                            <input id="Cristina-Kirchner" type="checkbox" name="imagen-positiva" value="Cristina Fernández de Kirchner"/>
+                            Cristina Fernández de Kirchner
+                        </label>
+
+                        <label for="Maximo-Kirchner">
+                            <input id="Maximo-Kirchner" type="checkbox" name="imagen-positiva" value="Máximo Kirchner"/>
+                            Máximo Kirchner
+                        </label>
+
+                        <label for="Axel-Kicillof">
+                            <input id="Axel-Kicillof" type="checkbox" name="imagen-positiva" value="Axel Kicillof"/>
+                            Axel Kicillof
+                        </label>
+
+                        <label for="Daniel-Scioli">
+                            <input id="Daniel-Scioli" type="checkbox" name="imagen-positiva" value="Daniel Scioli"/>
+                            Daniel Scioli
+                        </label>
+
+                        <label for="Sergio-Massa">
+                            <input id="Sergio-Massa" type="checkbox" name="imagen-positiva" value="Sergio Massa"/>
+                            Sergio Massa
+                        </label>
+
+                        <label for="Wado-Pedro">
+                            <input id="Wado-Pedro" type="checkbox" name="imagen-positiva" value="Wado de Pedro"/>
+                            Wado de Pedro
+                        </label>
+                        
+                        <label for="Juan-Grabois">
+                            <input id="Juan-Grabois" type="checkbox" name="imagen-positiva" value="Juan Grabois"/>
+                            Juan Grabois
+                        </label>
+
+                        <label for="Leandro-Santoro">
+                            <input id="Leandro-Santoro" type="checkbox" name="imagen-positiva" value="Leandro Santoro"/>
+                            Leandro Santoro
+                        </label>
+
+                        <label for="Mauricio-Macri">
+                            <input id="Mauricio-Macri" type="checkbox" name="imagen-positiva" value="Mauricio Macri"/>
+                            Mauricio Macri
+                        </label>
+
+                        <label for="Horacio-Larreta">
+                            <input id="Horacio-Larreta" type="checkbox" name="imagen-positiva" value="Horacio Rodríguez Larreta"/>
+                            Horacio Rodríguez Larreta
+                        </label>
+
+                        <label for="Maria-Vidal">
+                            <input id="Maria-Vidal" type="checkbox" name="imagen-positiva" value="María Eugenia Vidal"/>
+                            María Eugenia Vidal
+                        </label>
+
+                        <label for="Patricia-Bullrich">
+                            <input id="Patricia-Bullrich" type="checkbox" name="imagen-positiva" value="Patricia Bullrich"/>
+                            Patricia Bullrich
+                        </label>
+
+                        <label for="Jorge-Macri">
+                            <input id="Jorge-Macri" type="checkbox" name="imagen-positiva" value="Jorge Macri"/>
+                            Jorge Macri
+                        </label>
+
+                        <label for="Martin-Lousteau">
+                            <input id="Martin-Lousteau" type="checkbox" name="imagen-positiva" value="Martin Lousteau"/>
+                            Martín Lousteau
+                        </label>
+
+                        <label for="Diego-Santilli">
+                            <input id="Diego-Santilli" type="checkbox" name="imagen-positiva" value="Diego Santilli"/>
+                            Diego Santilli
+                        </label>
+
+                        <label for="Juan-Schiaretti">
+                            <input id="Juan-Schiaretti" type="checkbox" name="imagen-positiva" value="Juan Schiaretti"/>
+                            Juan Schiaretti
+                        </label>
+
+                        <label for="Javier-Milei">
+                            <input id="Javier-Milei" type="checkbox" name="imagen-positiva" value="Javier Milei"/>
+                            Javier Milei
+                        </label>
+
+                        <label for="Victoria-Villaruel">
+                            <input id="Victoria-Villaruel" type="checkbox" name="imagen-positiva" value="Victoria Villaruel"/>
+                            Victoria Villaruel
+                        </label>
+
+                        <label for="Ramiro-Marra">
+                            <input id="Ramiro-Marra" type="checkbox" name="imagen-positiva" value="Ramiro Marra"/>
+                            Ramiro Marra
+                        </label>
+
+                        <label for="Guillermo-Moreno">
+                            <input id="Guillermo-Moreno" type="checkbox" name="imagen-positiva" value="Guillermo Moreno"/>
+                            Guillermo Moreno
+                        </label>
+
+                        <label for="Nicolas-Del-Cano">
+                            <input id="Nicolas-Del-Cano" type="checkbox" name="imagen-positiva" value="Nicolás del Caño"/>
+                            Nicolás del Caño
+                        </label>
+
+                        <label for="Manuela-Castaneira">
+                            <input id="Manuela-Castaneira" type="checkbox" name="imagen-positiva" value="Manuela Castañeira"/>
+                            Manuela Castañeira
+                        </label>
+
+                        <label for="Myriam-Bregman">
+                            <input id="Myriam-Bregman" type="checkbox" name="imagen-positiva" value="Myriam Bregman"/>
+                            Myriam Bregman
+                        </label>
+                    </div>
+
+                    <div>
+                        <h3>3. ¿Aprueba o desaprueba la gestión del gobierno de Mauricio Macri?</h3>
+                        <label><input type="radio" name="gestion-macri" value="aprobado"/> Aprobado</label>
+                        <label><input type="radio" name="gestion-macri" value="desaprobado"/> Desaprobado</label>
+                        <label><input type="radio" name="gestion-macri" value="neutral"/> Neutral</label>
+
+                        <h4>¿Por qué?</h4>
+                        <textarea rows="6" cols="80" placeholder="Justificación..."></textarea>
+                    </div>
+
+                    <div>
+                        <h3>4. ¿Aprueba o desaprueba la gestión del gobierno de Alberto Fernández?</h3>
+                        <label><input type="radio" name="gestion-fernandez" value="aprobado"/> Aprobado</label>
+                        <label><input type="radio" name="gestion-fernandez" value="desaprobado"/> Desaprobado</label>
+                        <label><input type="radio" name="gestion-fernandez" value="neutral"/> Neutral</label>
+
+                        <h4>¿Por qué?</h4>
+                        <textarea rows="6" cols="80" placeholder="Justificación..."></textarea>
+                    </div>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Enviar"/>
+            </form>
+       </main>
+    </body>
+</html>
